@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajmir Ahmed - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header>
+    <nav>
+      <div class="logo">Ajmir Ahmed</div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <p class="greeting fade-in-up delay-1">👋 Hello, I'm</p>
+      <h1 class="fade-in-up delay-2" id="typed-name"></h1>
+      <p class="tagline fade-in-up delay-3">Computer Science & Engineering Student</p>
+      <p class="university fade-in-up delay-4">📚 Varendra University</p>
+      <a href="#about" class="btn fade-in-up delay-5">Learn More About Me</a>
+    </div>
+
+    <!-- ===== AVATAR / PROFILE IMAGE ===== -->
+    <div class="home-avatar fade-in-right delay-2">
+      <div class="avatar-circle float">
+
+        <!--
+          HOW TO USE YOUR OWN PHOTO:
+          1. Put your photo inside the "images" folder
+          2. Name it "profile.jpg" (or .png / .webp)
+          3. The <img> tag below will show it automatically
+
+          Right now it shows "profile.svg" as a placeholder.
+          Replace "images/profile.svg" with "images/profile.jpg"
+          once you add your real photo.
+        -->
+        <img
+          src="https://i.postimg.cc/XqxsbTMY/profile-jpg.jpg"
+          alt="Ajmir Ahmed - Profile Photo"
+          class="profile-img"
+          onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';"
+        />
+
+        <!-- Fallback: shows "AA" initials if image is missing -->
+        <span id="avatar-fallback" class="avatar-initials">AA</span>
+
+      </div>
+      <div class="blood-tag pulse-badge">🩸 B+</div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section">
+    <h2 class="section-title animate-title">About Me</h2>
+    <div class="about-cards">
+
+      <div class="card scroll-reveal">
+        <div class="card-icon bounce-icon">🎓</div>
+        <h3>Education</h3>
+        <p>Currently studying <strong>Computer Science & Engineering</strong> at Varendra University, Bangladesh.</p>
+      </div>
+
+      <div class="card scroll-reveal">
+        <div class="card-icon bounce-icon">🏠</div>
+        <h3>Hometown</h3>
+        <p>I'm from <strong>Sirajganj Sadar</strong>, a beautiful district in Bangladesh.</p>
+      </div>
+
+      <div class="card scroll-reveal">
+        <div class="card-icon bounce-icon">🗣️</div>
+        <h3>Languages</h3>
+        <p>I can speak and write in <strong>English</strong> and <strong>Bengali (বাংলা)</strong> fluently.</p>
+      </div>
+
+      <div class="card scroll-reveal">
+        <div class="card-icon bounce-icon">🩸</div>
+        <h3>Blood Group</h3>
+        <p>My blood group is <strong>B Positive (B+)</strong>. Happy to help in emergencies!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills-section">
+    <h2 class="section-title animate-title">My Skills</h2>
+    <p class="section-sub">Technologies I have learned so far</p>
+
+    <div class="skills-list">
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">C Programming</span>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="80"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">C++ Programming</span>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="75"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Java</span>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="70"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Database (SQL)</span>
+          <span class="skill-percent">72%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="72"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Skill Badges -->
+    <div class="badges">
+      <span class="badge badge-pop">C</span>
+      <span class="badge badge-pop">C++</span>
+      <span class="badge badge-pop">Java</span>
+      <span class="badge badge-pop">SQL</span>
+      <span class="badge badge-pop">OOP</span>
+      <span class="badge badge-pop">Data Structures</span>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title animate-title">Contact Me</h2>
+    <p class="section-sub">Feel free to reach out anytime!</p>
+
+    <div class="contact-info">
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <div>
+          <p class="contact-label">Email</p>
+          <p class="contact-value">ajmir@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div>
+          <p class="contact-label">Location</p>
+          <p class="contact-value">Sirajganj Sadar, Bangladesh</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">🎓</span>
+        <div>
+          <p class="contact-label">University</p>
+          <p class="contact-value">Varendra University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2026 Ajmir Ahmed · CSE Student · Varendra University</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
